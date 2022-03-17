@@ -1,0 +1,330 @@
+{
+	"info": {
+		"_postman_id": "414221de-1fc4-4ea9-a3ad-a04c61b9394f",
+		"name": "Atividade 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "access_token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://graph.facebook.com/oauth/access_token?client_id=911776672835792&client_secret=3bd3c3ba6814b5dae03be664cb27f804&grant_type=client_credentials",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"access_token"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "911776672835792"
+						},
+						{
+							"key": "client_secret",
+							"value": "3bd3c3ba6814b5dae03be664cb27f804"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "picture",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://graph.facebook.com/facebook/picture?redirect=false",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"facebook",
+						"picture"
+					],
+					"query": [
+						{
+							"key": "redirect",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "me",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "911776672835792|8Eb6xtzUI2cVn0R0LB9sVl3_NfY",
+						"type": "text"
+					},
+					{
+						"key": "public_profile",
+						"value": "ads_management",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer EAAM9QYyy6NABAEz0nTRfs0CdZAZCzItLNoF1LspDMHfUJxgAIe9NuWkDOg0Qep2u2riNqzE1srzBgo6P4n462DjaWpj9ZBqelSTOZBg9XcI6GaXEH9F89enNDKDyKSVA4wkh6ZCsgpSIsekDkCWrZBQLkb7i8GE9TZCaT1cMQaB96JYrjFZAU2AU1P6oLVDAMhyjR54pHRdLwLIPUstHFFSdbIJvshFIacGfgDnn27ZCR82EEQDUvvbhi",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://graph.facebook.com/v13.0/me?fields=id,name",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v13.0",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://bigqueryconnection.googleapis.com/$discovery/rest?version=v1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "AIzaSyBBxxhcOYG_-oOrLpp2oGZiOnv0dkXud3E",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://bigqueryconnection.googleapis.com/$discovery/rest?version=v1",
+					"protocol": "https",
+					"host": [
+						"bigqueryconnection",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"$discovery",
+						"rest"
+					],
+					"query": [
+						{
+							"key": "version",
+							"value": "v1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://bigquery.googleapis.com/discovery/v1/apis/bigquery/v2/rest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bigquery.googleapis.com/discovery/v1/apis/bigquery/v2/rest",
+					"protocol": "https",
+					"host": [
+						"bigquery",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"discovery",
+						"v1",
+						"apis",
+						"bigquery",
+						"v2",
+						"rest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://bigquerymigration.googleapis.com/v2alpha/projects/atividade-2-344417/locations/us/workflows?key=AIzaSyBBxxhcOYG_-oOrLpp2oGZiOnv0dkXud3E",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "AIzaSyBBxxhcOYG_-oOrLpp2oGZiOnv0dkXud3E",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://bigquerymigration.googleapis.com/v2alpha/projects/atividade-2-344417/locations/us/workflows?key=AIzaSyBBxxhcOYG_-oOrLpp2oGZiOnv0dkXud3E",
+					"protocol": "https",
+					"host": [
+						"bigquerymigration",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v2alpha",
+						"projects",
+						"atividade-2-344417",
+						"locations",
+						"us",
+						"workflows"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "AIzaSyBBxxhcOYG_-oOrLpp2oGZiOnv0dkXud3E"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/zen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/zen",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"zen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/users/felipefagundesg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/users/felipefagundesg",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"users",
+						"felipefagundesg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/users/felipefagundesg/repos?type=owner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/users/felipefagundesg/repos?type=owner",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"users",
+						"felipefagundesg",
+						"repos"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "owner"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/repos/twbs/bootstrap",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/twbs/bootstrap",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"twbs",
+						"bootstrap"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
